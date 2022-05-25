@@ -196,6 +196,9 @@ h1 {
 }
 
 @media screen and (max-width: 500px) {
+  .rps-pics img {
+    width: 20px;
+  }
   .rps-pics {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
