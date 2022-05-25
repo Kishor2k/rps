@@ -1,0 +1,150 @@
+@import url("https://fonts.googleapis.com/css2?family=Bubblegum+Sans&display=swap");
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Bubblegum Sans", sans-serif;
+}
+
+:root {
+  --clr-dark: #242226;
+  --clr-light: #f5fbfb;
+  --clr-accent: #45c9c0;
+  --clr-dark-accent: #16615c;
+  --clr-hover: #2a7975;
+}
+/* font-family: 'Bubblegum Sans', cursive; */
+body {
+  background: var(--clr-accent);
+  padding: 20px;
+}
+img {
+  width: 100%;
+  display: block;
+}
+section {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 50px;
+}
+.intro {
+  background: var(--clr-accent);
+  transition: 0.5s ease-in-out;
+}
+.intro.play {
+  opacity: 0;
+  pointer-events: none;
+}
+.game {
+  opacity: 0;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 20px;
+  z-index: -1;
+  transition: 0.5s ease-in-out;
+}
+.game.play {
+  opacity: 1;
+  pointer-events: all;
+  z-index: 100;
+}
+
+.rps-pics,
+.rps-choices {
+  display: flex;
+  max-width: 500px;
+  gap: 20px;
+}
+button {
+  background: var(--clr-dark-accent);
+  color: var(--clr-light);
+  border: none;
+  border-radius: 10px;
+  font-size: 20px;
+  cursor: pointer;
+  box-shadow: 2px 3px 5px rgba(0, 0, 0, 0.3);
+  transition: 0.3s ease-out;
+}
+.start {
+  padding: 20px 40px;
+}
+button:hover {
+  background: var(--clr-hover);
+}
+
+.rps-choices button {
+  padding: 10px;
+}
+.rps-choices button:hover {
+  transform: translateY(-5px);
+}
+.output {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+.output h1 {
+  color: var(--clr-dark);
+}
+.output span {
+  display: inline-block;
+  text-align: center;
+  height: 40px;
+  width: 40px;
+  background: var(--clr-dark-accent);
+  padding: 5px;
+  border-radius: 5px;
+  color: var(--clr-light);
+}
+.output-image {
+  width: 100%;
+  display: grid;
+  place-items: center;
+  margin-top: 20px;
+  gap: 10px;
+}
+.output-image img {
+  width: 50px;
+}
+h1 {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.winner-text {
+  color: var(--clr-dark);
+  font-size: 18px;
+}
+.reset {
+  padding: 10px 20px;
+  display: none;
+  pointer-events: none;
+}
+.reset.show {
+  display: block;
+  pointer-events: all;
+}
+h1 {
+  color: var(--clr-dark-accent);
+}
+footer {
+  margin-top: auto;
+  background: var(--clr-dark-accent);
+  width: 100%;
+  text-align: center;
+  color: var(--clr-accent);
+  padding: 10px;
+}
+footer a {
+  color: var(--clr-light);
+  font-weight: 500;
+  text-decoration: none;
+}

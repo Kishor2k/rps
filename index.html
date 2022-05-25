@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <script src="app.js" defer></script>
+    <title>Rock Paper Scissor Game</title>
+  </head>
+  <body>
+    <section class="intro">
+      <div class="rps-pics">
+        <img src="./Images/rock.png" alt="rock" />
+        <img src="./Images/paper.png" alt="paper" />
+        <img src="./Images/scissor.png" alt="rock" />
+      </div>
+      <button class="start">Let's Play</button>
+    </section>
+
+    <section class="game">
+      <h1>Best of 5 wins the game</h1>
+      <div class="rps-choices">
+        <button class="rock"><img src="./Images/rock.png" alt="rock" />Rock</button>
+        <button class="paper">
+          <img src="./Images/paper.png" alt="paper" />Paper
+        </button>
+        <button class="scissor">
+          <img src="./Images/scissor.png" alt="scissor" />Scissor
+        </button>
+      </div>
+      <div class="output">
+
+        <div class="col col-1">
+          <h1 class="player">
+            Player <span id="player-score" class="score"></span>
+          </h1>
+          <div class="player-choice-images output-image">
+            <!-- image will be added through js -->
+          </div>
+        </div>
+
+        <div class="col col-2">
+          <h1 class="computer">
+            <span id="computer-score" class="score"></span> Computer 
+          </h1>
+          <div class="computer-choice-images output-image">
+            <!-- image will be added through js -->
+          </div>
+        </div>
+      </div>
+      <div class="winner-text">
+
+      </div>
+      <button class="reset">Play Again</button>
+    </section>
+
+    <footer>
+      <p>Designed and Coded by <a href="https://github.com/Kishor2k">Kishor Karki</a></p>
+  </footer>
+  </body>
+</html>
