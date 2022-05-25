@@ -6,7 +6,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: "Bubblegum Sans", sans-serif;
+  font-family: "Bubblegum Sans", cursive;
 }
 
 :root {
@@ -16,20 +16,24 @@
   --clr-dark-accent: #16615c;
   --clr-hover: #2a7975;
 }
-/* font-family: 'Bubblegum Sans', cursive; */
+
 body {
+  min-height: 100vh;
   background: var(--clr-accent);
   padding: 20px;
+  display: grid;
+  place-items: center;
+  /* overflow: hidden; */
 }
 img {
   width: 100%;
   display: block;
 }
 section {
+  max-width: 500px;
   min-height: 100vh;
   display: flex;
   justify-content: center;
-  align-items: center;
   flex-direction: column;
   gap: 50px;
 }
@@ -42,15 +46,18 @@ section {
   pointer-events: none;
 }
 .game {
+  width: 100%;
+  min-height: 100vh;
   opacity: 0;
   position: absolute;
   top: 0;
-  left: 0;
-  width: 100%;
+  left: 50%;
+  transform: translateX(-50%);
   padding: 20px;
   z-index: -1;
   transition: 0.5s ease-in-out;
 }
+
 .game.play {
   opacity: 1;
   pointer-events: all;
@@ -60,7 +67,6 @@ section {
 .rps-pics,
 .rps-choices {
   display: flex;
-  max-width: 500px;
   gap: 20px;
 }
 button {
@@ -117,10 +123,12 @@ button:hover {
 h1 {
   display: flex;
   align-items: center;
+  justify-content: center;
   gap: 10px;
 }
 .winner-text {
   color: var(--clr-dark);
+  text-align: center;
   font-size: 18px;
 }
 .reset {
@@ -134,17 +142,4 @@ h1 {
 }
 h1 {
   color: var(--clr-dark-accent);
-}
-footer {
-  margin-top: auto;
-  background: var(--clr-dark-accent);
-  width: 100%;
-  text-align: center;
-  color: var(--clr-accent);
-  padding: 10px;
-}
-footer a {
-  color: var(--clr-light);
-  font-weight: 500;
-  text-decoration: none;
 }
