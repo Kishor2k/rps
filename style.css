@@ -81,7 +81,8 @@ section {
 }
 
 .rps-pics {
-  background: red;
+  max-width: 100%;
+  overflow-x: hidden;
 }
 
 .rps-pics,
