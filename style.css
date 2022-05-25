@@ -5,7 +5,7 @@
   margin: 0;
   padding: 0;
   -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
   font-family: "Bubblegum Sans", cursive;
 }
 
@@ -39,12 +39,12 @@ section {
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
   gap: 50px;
 }
 
@@ -67,7 +67,7 @@ section {
   top: 0;
   left: 50%;
   -webkit-transform: translateX(-50%);
-          transform: translateX(-50%);
+  transform: translateX(-50%);
   padding: 20px;
   z-index: -1;
   -webkit-transition: 0.5s ease-in-out;
@@ -101,7 +101,7 @@ button {
   font-size: 20px;
   cursor: pointer;
   -webkit-box-shadow: 2px 3px 5px rgba(0, 0, 0, 0.3);
-          box-shadow: 2px 3px 5px rgba(0, 0, 0, 0.3);
+  box-shadow: 2px 3px 5px rgba(0, 0, 0, 0.3);
   -webkit-transition: 0.3s ease-out;
   transition: 0.3s ease-out;
 }
@@ -120,7 +120,7 @@ button:hover {
 
 .rps-choices button:hover {
   -webkit-transform: translateY(-5px);
-          transform: translateY(-5px);
+  transform: translateY(-5px);
 }
 
 .output {
@@ -129,8 +129,8 @@ button:hover {
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
 }
 
 .output h1 {
@@ -166,11 +166,11 @@ h1 {
   display: -ms-flexbox;
   display: flex;
   -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
   -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
   gap: 10px;
 }
 
@@ -193,5 +193,13 @@ h1 {
 
 h1 {
   color: var(--clr-dark-accent);
+}
+
+@media screen and (max-width: 500px) {
+  .rps-pics {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 10px;
+  }
 }
 /*# sourceMappingURL=style.css.map */
