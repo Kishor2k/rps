@@ -197,7 +197,7 @@ h1 {
 
 @media screen and (max-width: 500px) {
   .rps-pics img {
-    width: 20px;
+    width: 100px;
   }
   .rps-pics {
     display: grid;
