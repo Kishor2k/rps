@@ -23,7 +23,7 @@ body {
   padding: 20px;
   display: grid;
   place-items: center;
-  /* overflow: hidden; */
+  overflow-x: hidden;
 }
 img {
   width: 100%;
@@ -63,7 +63,9 @@ section {
   pointer-events: all;
   z-index: 100;
 }
-
+.rps-pics {
+  background: red;
+}
 .rps-pics,
 .rps-choices {
   display: flex;
